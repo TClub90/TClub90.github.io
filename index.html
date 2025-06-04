@@ -2,96 +2,111 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Torneo Open Italmatch - Tennis Club Lavadore</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background: #f4f4f4;
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        h1, h2 {
-            text-align: center;
-            color: #003366;
-        }
-        .section {
-            background: white;
-            padding: 15px 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        table, th, td {
-            border: 1px solid #999;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        a {
-            color: #007acc;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tennis Club Lavadore</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0f7ff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 5px;
+    }
+    .programma, .listino {
+      margin-bottom: 2rem;
+    }
+    .programma div, .listino li {
+      margin-bottom: 8px;
+    }
+    .listino ul {
+      list-style: none;
+      padding: 0;
+    }
+    .listino li {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
+      padding: 5px 0;
+    }
+    .qr {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .qr img {
+      max-width: 150px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Torneo Open Italmatch - Tennis Club Lavadore</h1>
 
-    <div class="section">
-        <h2>📍 Info Evento</h2>
-        <p>📅 Dal 2 al 15 giugno 2025</p>
-        <p>📌 Presso il Tennis Club Lavadore, Celle Ligure</p>
-        <p>🔗 <a href="https://www.fitp.it/Tornei/Dettaglio-Competizione?competitionId=89DC6468-DFC4-460C-8AF0-84FAAB8FD35D" target="_blank">Pagina ufficiale FITP</a></p>
-    </div>
+  <header>
+    <img src="logo.png" alt="Logo Tennis Club Lavadore" />
+    <h1>Tennis Club Lavadore</h1>
+    <p>2° Torneo Open Italmatch Celle Ligure</p>
+  </header>
 
-    <div class="section">
-        <h2>📆 Orari Partite - 4 giugno</h2>
-        <table>
-            <tr><th>Campo 1</th><th>Campo 2</th></tr>
-            <tr><td>11:00 – BORDON FILIPPO vs DA ROS MATTEO</td><td>17:00 – ANCONA MATTEO vs GALDENZI PIETRO</td></tr>
-            <tr><td>16:30 – BROZZO ANDREA vs STRAZZA MATTIA</td><td>20:00 – CRITELLI ALESSANDRO vs BOESSO TOMMASO</td></tr>
-            <tr><td>18:30 – MIRCOCCI LUCA vs MOTTO FRANCESCO</td><td>A seguire – GRAMATICOPOLO GIOVANNI vs CUFFINI VINCENZO</td></tr>
-            <tr><td>20:00 – ZIGNEGO GIORGIO vs DE SANCTIS EMANUELE</td><td></td></tr>
-        </table>
-    </div>
+  <main>
+    <section class="programma">
+      <h2>📅 Programma Partite – Mercoledì 4 Giugno 2025</h2>
 
-    <div class="section">
-        <h2>📊 Tabellone & Risultati</h2>
-        <p>👉 <a href="https://docs.google.com/spreadsheets/d/1gW0cA7C9KXYZTABELLA12345/edit?usp=sharing" target="_blank">Visualizza il tabellone completo su Google Sheets</a></p>
-    </div>
+      <h3>Campo 1</h3>
+      <div><strong>11:00</strong> – Bordon Filippo vs Da Ros Matteo</div>
+      <div><strong>16:30</strong> – Briozzo Andrea vs Strazza Mattia</div>
+      <div><strong>18:30</strong> – Maroccu Luca vs Motto Francesco</div>
+      <div><strong>20:00</strong> – Zignego Giorgio vs De Sanctis Emanuele</div>
 
-    <div class="section">
-        <h2>☕ Menù del Bar</h2>
-        <table>
-            <tr><th>Prodotto</th><th>Prezzo</th></tr>
-            <tr><td>Acqua</td><td>€1,00</td></tr>
-            <tr><td>Caffè</td><td>€1,00</td></tr>
-            <tr><td>Coca-cola</td><td>€1,50</td></tr>
-            <tr><td>Crodino</td><td>€2,50</td></tr>
-            <tr><td>Energy drink</td><td>€3,00</td></tr>
-            <tr><td>Estathé</td><td>€1,50</td></tr>
-            <tr><td>Powerade</td><td>€3,00</td></tr>
-            <tr><td>Succo di frutta</td><td>€3,00</td></tr>
-            <tr><td>Birra in bottiglia</td><td>€3,50</td></tr>
-            <tr><td>Birra alla spina (0,25l)</td><td>€3,00</td></tr>
-            <tr><td>Prosecco calice</td><td>€3,00</td></tr>
-            <tr><td>Panino</td><td>€6,00</td></tr>
-            <tr><td>Patatine</td><td>€1,50</td></tr>
-            <tr><td>Toast</td><td>€4,50</td></tr>
-        </table>
-    </div>
+      <h3>Campo 2</h3>
+      <div><strong>17:00</strong> – Ancona Matteo vs Galdenzi Pietro</div>
+      <div><strong>20:00</strong> – Critelli Alessandro vs Boesso Tommaso</div>
+      <div><strong>A seguire</strong> – Gramaticopolo Giovanni vs Cufringa Vincenzo</div>
+    </section>
 
-    <div class="section">
-        <h2>📞 Contatti</h2>
-        <p>Per info: chiedere in segreteria o al bar del circolo durante il torneo.</p>
+    <section class="listino">
+      <h2>🍹 Listino Prezzi</h2>
+      <ul>
+        <li><span>Acqua</span> <span>€ 1,00</span></li>
+        <li><span>Caffè</span> <span>€ 1,00</span></li>
+        <li><span>Coca-Cola</span> <span>€ 1,50</span></li>
+        <li><span>Crodino</span> <span>€ 2,50</span></li>
+        <li><span>Energy drink</span> <span>€ 3,00</span></li>
+        <li><span>Estathé</span> <span>€ 1,50</span></li>
+        <li><span>Powerade</span> <span>€ 3,00</span></li>
+        <li><span>Succo di frutta</span> <span>€ 3,00</span></li>
+        <li><span>Birra in bottiglia</span> <span>€ 3,50</span></li>
+        <li><span>Birra alla spina (0,25l)</span> <span>€ 3,00</span></li>
+        <li><span>Prosecco calice</span> <span>€ 3,00</span></li>
+        <li><span>Panino</span> <span>€ 6,00</span></li>
+        <li><span>Patatine</span> <span>€ 1,50</span></li>
+        <li><span>Toast</span> <span>€ 4,50</span></li>
+      </ul>
+    </section>
+
+    <div class="qr">
+      <h2>🔗 QR Code per accedere al sito</h2>
+      <p>Scansiona con il tuo telefono:</p>
+      <img src="qr.png" alt="QR Code per il sito"/>
     </div>
+  </main>
 </body>
 </html>
