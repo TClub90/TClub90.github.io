@@ -2,69 +2,145 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TClub90</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2° Torneo Open Italmatch - TC Lavadore</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f4f4f4;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
     }
 
     header {
-      background-color: #007acc; /* Blu */
+      background-color: #0056a3;
       color: white;
-      padding: 1.5rem 2rem;
+      padding: 30px 20px;
       text-align: center;
     }
 
-    main {
-      padding: 2rem;
-      text-align: center;
+    header h1 {
+      margin: 0;
+      font-size: 28px;
     }
 
-    .highlight {
-      color: #ff6600; /* Arancione */
+    nav {
+      background-color: #ff6f00;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
     }
 
-    footer {
-      background-color: #007acc;
+    nav a {
       color: white;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-
-    a {
-      color: #ff6600;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
 
-    a:hover {
+    nav a:hover {
       text-decoration: underline;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+      color: #0056a3;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #0056a3;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Benvenuto in <span class="highlight">TClub90</span></h1>
-    <p>Il tuo punto di riferimento per la tecnologia</p>
+    <h1>2° Torneo Open Italmatch<br>Tennis Club Lavadore - Celle Ligure</h1>
   </header>
 
-  <main>
-    <h2>Chi siamo</h2>
-    <p>Un club nato dalla passione per la tecnologia, l'innovazione e la collaborazione.</p>
-    <p>Scopri di più seguendoci su <a href="#">Instagram</a> o <a href="#">GitHub</a>.</p>
-  </main>
+  <nav>
+    <a href="#punteggio">Punteggio</a>
+    <a href="#listino">Listino Bar</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <div class="section" id="punteggio">
+    <h2>Punteggio Torneo</h2>
+    <table>
+      <tr>
+        <th>Giocatore 1</th>
+        <th>Giocatore 2</th>
+        <th>Set</th>
+        <th>Vincitore</th>
+      </tr>
+      <tr>
+        <td>Rossi</td>
+        <td>Bianchi</td>
+        <td>6-4, 3-6, 7-5</td>
+        <td>Rossi</td>
+      </tr>
+      <!-- Aggiungi altre righe -->
+    </table>
+  </div>
+
+  <div class="section" id="listino">
+    <h2>Listino Prezzi Bar</h2>
+    <table>
+      <tr>
+        <th>Prodotto</th>
+        <th>Prezzo</th>
+      </tr>
+      <tr>
+        <td>Caffè</td>
+        <td>1,00 €</td>
+      </tr>
+      <tr>
+        <td>Bibita</td>
+        <td>2,00 €</td>
+      </tr>
+      <tr>
+        <td>Panino</td>
+        <td>4,00 €</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section" id="contatti">
+    <h2>Contatti</h2>
+    <p><strong>Email:</strong> info@tennislavadore.it</p>
+    <p><strong>Instagram:</strong> @tennislavadore</p>
+    <p><strong>Telefono:</strong> +39 123 456 7890</p>
+    <p><strong>Indirizzo:</strong> Via Lavadore, Celle Ligure (SV)</p>
+  </div>
 
   <footer>
-    © 2025 TClub90. Tutti i diritti riservati.
+    © 2025 Tennis Club Lavadore - Torneo Open Italmatch
   </footer>
-
 </body>
 </html>
