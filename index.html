@@ -15,19 +15,13 @@
     header {
       background-color: #0056a3;
       color: white;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      padding: 30px 20px;
+      text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 22px;
-    }
-
-    header img {
-      height: 60px;
+      font-size: 28px;
     }
 
     nav {
@@ -62,19 +56,11 @@
       color: #0056a3;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-    }
-
-    table, th, td {
-      border: 1px solid #ccc;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: left;
+    pre {
+      background-color: #f0f0f0;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
     }
 
     footer {
@@ -83,71 +69,61 @@
       text-align: center;
       padding: 20px;
     }
-
-    a.button {
-      display: inline-block;
-      background-color: #ff6f00;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-
-    a.button:hover {
-      background-color: #e65c00;
-    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>2° Torneo Open Italmatch<br>Tennis Club Lavadore - Celle Ligure</h1>
-    <img src="logo_tennis_lavadore.png" alt="Logo Tennis Club Lavadore" />
+    <h1>2° Torneo Open Italmatch - TC Lavadore</h1>
   </header>
 
   <nav>
-    <a href="#punteggio">Punteggio</a>
-    <a href="#listino">Listino Bar</a>
-    <a href="#contatti">Contatti</a>
+    <a href="#programma-partite">Programma</a>
+    <a href="#aperitivi">Aperitivi</a>
   </nav>
 
-  <div class="section" id="punteggio">
-    <h2>Punteggio Torneo</h2>
-    <p>Visualizza risultati e tabelloni ufficiali sul sito FITP:</p>
-    <a href="https://www.fitp.it/Tornei/Dettaglio-Competizione?competitionId=89DC6468-DFC4-460C-8AF0-84FAAB8FD35D" class="button" target="_blank">Vai alla pagina FITP</a>
-  </div>
+  <section class="section" id="programma-partite">
+    <h2>Programma Partite - 04/06/2025</h2>
+    <pre>
+CAMPO 1
+Ore 16
+Lorenzo Brazzoli 3.2
+Federico Capeccia 2.8
+Ore 18
+Matteo Ancona 3.1
+Alessandro Fossati 3.2
+Ore 19.30
+Leonardo Rovero 2.8
+Niccolò Marbasci 3.2
 
-  <div class="section" id="listino">
-    <h2>Listino Prezzi Bar</h2>
-    <table>
-      <tr><th>Prodotto</th><th>Prezzo</th></tr>
-      <tr><td>Acqua</td><td>€ 1,00</td></tr>
-      <tr><td>Caffè</td><td>€ 1,00</td></tr>
-      <tr><td>Coca-cola</td><td>€ 2,50</td></tr>
-      <tr><td>Crodino</td><td>€ 3,00</td></tr>
-      <tr><td>Energy drink</td><td>€ 3,00</td></tr>
-      <tr><td>Estathé</td><td>€ 1,50</td></tr>
-      <tr><td>Powerade</td><td>€ 3,00</td></tr>
-      <tr><td>Succo di frutta</td><td>€ 3,00</td></tr>
-      <tr><td>Birra in bottiglia</td><td>€ 3,50</td></tr>
-      <tr><td>Birra alla spina (0,25l)</td><td>€ 3,00</td></tr>
-      <tr><td>Prosecco calice</td><td>€ 3,00</td></tr>
-      <tr><td>Panino</td><td>€ 6,00</td></tr>
-      <tr><td>Patatine</td><td>€ 1,50</td></tr>
-      <tr><td>Toast</td><td>€ 4,50</td></tr>
-    </table>
-  </div>
+CAMPO 2
+Ore 16
+Andrea Briozzo 3.1
+Andrea Trentini 3.2
+Ore 18
+Tommaso Callà 3.2
+Lorenzo della Peruta 2.8
+Ore 20
+Luca Marcocci 3.1
+Gianluca Percivale 3.2
+    </pre>
+  </section>
 
-  <div class="section" id="contatti">
-    <h2>Contatti</h2>
-    <p><strong>Email:</strong> tennisclublavadore@gmail.com</p>
-    <p><strong>Instagram:</strong> @tennislavadore</p>
-    <p><strong>Telefono:</strong> 019 990869</p>
-    <p><strong>Indirizzo:</strong> Via Lavadore, Celle Ligure (SV)</p>
-  </div>
+  <section class="section" id="aperitivi">
+    <h2>Aperitivi</h2>
+    <!-- Puoi aggiungere qui una lista, se vuoi -->
+    <!--
+    <ul>
+      <li>Spritz</li>
+      <li>Negroni</li>
+      <li>Americano</li>
+    </ul>
+    -->
+  </section>
 
   <footer>
-    © 2025 Tennis Club Lavadore - Torneo Open Italmatch
+    &copy; 2025 TC Lavadore - Tutti i diritti riservati
   </footer>
+
 </body>
 </html>
