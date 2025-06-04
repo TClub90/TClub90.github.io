@@ -31,10 +31,16 @@
     }
 
     .logo-container img {
-      max-height: 100px;
+      max-height: 120px;
       background-color: white;
-      border-radius: 10px;
-      padding: 5px;
+      border-radius: 12px;
+      padding: 8px;
+      box-shadow: 0 0 15px rgba(0, 86, 163, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .logo-container img:hover {
+      transform: scale(1.05);
     }
 
     header h1 {
@@ -87,13 +93,20 @@
 
     .match-table th, .match-table td {
       padding: 12px;
-      border: 1px solid #ccc;
       text-align: left;
     }
 
-    .match-table th {
+    .match-table thead th {
       background-color: #0056a3;
       color: white;
+    }
+
+    .match-table tbody tr:nth-child(odd) {
+      background-color: #f4f8ff;
+    }
+
+    .match-table tbody tr:hover {
+      background-color: #dfeeff;
     }
 
     .menu-item {
@@ -111,6 +124,24 @@
     .contact {
       font-size: 16px;
       line-height: 1.8;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
     }
 
     footer {
@@ -150,6 +181,7 @@
   <nav>
     <a href="#programma-partite">Programma</a>
     <a href="#bar">Bar</a>
+    <a href="#galleria">Galleria</a>
     <a href="#contatti">Contatti</a>
   </nav>
 
@@ -174,7 +206,7 @@
     </table>
     <div class="official-link">
       <a href="https://www.fitp.it/Tornei/Dettaglio-Competizione?competitionId=89DC6468-DFC4-460C-8AF0-84FAAB8FD35D" target="_blank">
-        Visualizza la pagina dedicata al torneo sul sito FITP
+        Visualizza la competizione sul sito FITP
       </a>
     </div>
   </section>
@@ -195,6 +227,15 @@
     <div class="menu-item"><span>Panino</span><span>€ 6,00</span></div>
     <div class="menu-item"><span>Patatine</span><span>€ 1,50</span></div>
     <div class="menu-item"><span>Toast</span><span>€ 4,50</span></div>
+  </section>
+
+  <section class="section gallery" id="galleria">
+    <h2>Galleria fotografica</h2>
+    <div class="gallery-grid">
+      <img src="gallery/foto1.jpg" alt="Foto torneo 1">
+      <img src="gallery/foto2.jpg" alt="Foto torneo 2">
+      <img src="gallery/foto3.jpg" alt="Foto torneo 3">
+    </div>
   </section>
 
   <section class="section contact" id="contatti">
