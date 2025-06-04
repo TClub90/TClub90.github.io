@@ -14,10 +14,26 @@
     }
 
     header {
-      background-color: #0056a3;
+      background: linear-gradient(to right, #003c71, #0056a3);
       color: white;
       padding: 40px 20px;
       text-align: center;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo-container img {
+      max-height: 100px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 5px;
     }
 
     header h1 {
@@ -59,12 +75,24 @@
       margin-bottom: 15px;
     }
 
-    .matches pre {
+    table.match-table {
+      width: 100%;
+      border-collapse: collapse;
       background-color: #eef4ff;
-      padding: 20px;
-      border-radius: 8px;
-      white-space: pre-wrap;
       font-size: 16px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .match-table th, .match-table td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    .match-table th {
+      background-color: #0056a3;
+      color: white;
     }
 
     .menu-item {
@@ -90,50 +118,68 @@
       text-align: center;
       padding: 25px;
     }
+
+    .official-link {
+      margin-top: 15px;
+      display: block;
+      text-align: center;
+    }
+
+    .official-link a {
+      color: #0056a3;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .official-link a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
   <header>
+    <div class="logo-container">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcUAAACICAYAAACWcPCCAABEx0lEQVR4nO29eXwcx3Un/q2eA/fBG7wgUBd1ECIo2bJs0iaUj03Y..." alt="Italmatch Chemicals">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAx..." alt="Tennis Club Lavadore">
+    </div>
     <h1>2° Torneo Open Italmatch - TC Lavadore</h1>
-    <p>Vieni a vedere il meglio del tennis locale e a goderti un drink al nostro bar!</p>
   </header>
 
   <nav>
     <a href="#programma-partite">Programma</a>
-    <a href="#aperitivi">Aperitivi</a>
+    <a href="#bar">Bar</a>
     <a href="#contatti">Contatti</a>
   </nav>
 
   <section class="section matches" id="programma-partite">
     <h2>Programma Partite - 04/06/2025</h2>
-    <pre>
-CAMPO 1
-Ore 16
-Lorenzo Brazzoli 3.2
-Federico Capeccia 2.8
-Ore 18
-Matteo Ancona 3.1
-Alessandro Fossati 3.2
-Ore 19.30
-Leonardo Rovero 2.8
-Niccolò Marbasci 3.2
-
-CAMPO 2
-Ore 16
-Andrea Briozzo 3.1
-Andrea Trentini 3.2
-Ore 18
-Tommaso Callà 3.2
-Lorenzo della Peruta 2.8
-Ore 20
-Luca Marcocci 3.1
-Gianluca Percivale 3.2
-    </pre>
+    <table class="match-table">
+      <thead>
+        <tr>
+          <th>Campo</th>
+          <th>Ora</th>
+          <th>Giocatori</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Campo 1</td><td>16:00</td><td>Lorenzo Brazzoli (3.2) vs Federico Capeccia (2.8)</td></tr>
+        <tr><td>Campo 1</td><td>18:00</td><td>Matteo Ancona (3.1) vs Alessandro Fossati (3.2)</td></tr>
+        <tr><td>Campo 1</td><td>19:30</td><td>Leonardo Rovero (2.8) vs Niccolò Marbasci (3.2)</td></tr>
+        <tr><td>Campo 2</td><td>16:00</td><td>Andrea Briozzo (3.1) vs Andrea Trentini (3.2)</td></tr>
+        <tr><td>Campo 2</td><td>18:00</td><td>Tommaso Callà (3.2) vs Lorenzo della Peruta (2.8)</td></tr>
+        <tr><td>Campo 2</td><td>20:00</td><td>Luca Marcocci (3.1) vs Gianluca Percivale (3.2)</td></tr>
+      </tbody>
+    </table>
+    <div class="official-link">
+      <a href="https://www.fitp.it/Tornei/Dettaglio-Competizione?competitionId=89DC6468-DFC4-460C-8AF0-84FAAB8FD35D" target="_blank">
+        Visualizza la competizione sul sito FITP
+      </a>
+    </div>
   </section>
 
-  <section class="section" id="aperitivi">
-    <h2>Aperitivi</h2>
+  <section class="section" id="bar">
+    <h2>Bar</h2>
     <div class="menu-item"><span>Acqua</span><span>€ 1,00</span></div>
     <div class="menu-item"><span>Caffè</span><span>€ 1,00</span></div>
     <div class="menu-item"><span>Coca-cola</span><span>€ 2,50</span></div>
