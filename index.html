@@ -1,264 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>2° Torneo Open Italmatch - TC Lavadore</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(to right, #003c71, #0056a3);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .logo-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-    }
-
-    .logo-container img {
-      max-height: 120px;
-      background-color: white;
-      border-radius: 12px;
-      padding: 8px;
-      box-shadow: 0 0 15px rgba(0, 86, 163, 0.3);
-      transition: transform 0.3s ease;
-    }
-
-    .logo-container img:hover {
-      transform: scale(1.05);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    nav {
-      background-color: #ff6f00;
-      display: flex;
-      justify-content: center;
-      padding: 12px 0;
-      font-size: 17px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .section {
-      padding: 40px 25px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-    }
-
-    .section h2 {
-      color: #0056a3;
-      margin-bottom: 15px;
-    }
-
-    table.match-table {
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      overflow: hidden;
-    
-      width: 100%;
-      border-collapse: collapse;
-      background-color: #eef4ff;
-      font-size: 16px;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .match-table th, .match-table td {
-      padding: 12px;
-      text-align: left;
-    }
-
-    .match-table thead th {
-      background-color: #0056a3;
-      color: white;
-    }
-
-    .match-table tbody tr:nth-child(odd) {
-      background-color: #f4f8ff;
-    }
-
-    .match-table tbody tr:hover {
-      background-color: #dfeeff;
-    }
-
-    .menu-item {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #ddd;
-      padding: 8px 0;
-      font-size: 16px;
-    }
-
-    .menu-item:last-child {
-      border-bottom: none;
-    }
-
-    .contact {
-      font-size: 16px;
-      line-height: 1.8;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .gallery-grid img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .gallery-grid img:hover {
-      transform: scale(1.03);
-    }
-
-    footer {
-      background-color: #0056a3;
-      color: white;
-      text-align: center;
-      padding: 25px;
-    }
-
-    .official-link {
-      margin-top: 15px;
-      display: block;
-      text-align: center;
-    }
-
-    .official-link a {
-      color: #0056a3;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .official-link a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    
-    <div style="background: linear-gradient(to right, #003c71, #0056a3); padding: 20px 0;">
-      <div class="logo-container" style="margin-bottom: 10px;">
-
-      <img src="img/italmatch-logo.png" alt="Logo Italmatch Chemicals">
-      <img src="img/lavadore-logo.jpg" alt="Logo Tennis Club Lavadore">
+    <div>
+      <img src="italmatch-logo.png" alt="Italmatch Chemicals">
+      <img src="lavadore-logo.jpg" alt="TC Lavadore">
     </div>
-    <div style="color: white; font-style: italic; font-size: 14px;">Main Sponsor & Organizzatore</div>
     <h1>2° Torneo Open Italmatch - TC Lavadore</h1>
   </header>
 
   <nav>
-    <a href="#programma-partite">Programma</a>
+    <a href="#programma">Programma</a>
     <a href="#bar">Bar</a>
     <a href="#galleria">Galleria</a>
     <a href="#contatti">Contatti</a>
   </nav>
 
-  <section class="section matches" id="programma-partite">
-    <h2>Programma Partite - 04/06/2025</h2>
-    <table class="match-table">
-      <thead>
-        <tr>
-          <th>Campo</th>
-          <th>Ora</th>
-          <th>Giocatori</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Campo 1</td><td>16:00</td><td>Lorenzo Brazzoli (3.2) vs Federico Capeccia (2.8)</td></tr>
-        <tr><td>Campo 1</td><td>18:00</td><td>Matteo Ancona (3.1) vs Alessandro Fossati (3.2)</td></tr>
-        <tr><td>Campo 1</td><td>19:30</td><td>Leonardo Rovero (2.8) vs Niccolò Marbasci (3.2)</td></tr>
-        <tr><td>Campo 2</td><td>16:00</td><td>Andrea Briozzo (3.1) vs Andrea Trentini (3.2)</td></tr>
-        <tr><td>Campo 2</td><td>18:00</td><td>Tommaso Callà (3.2) vs Lorenzo della Peruta (2.8)</td></tr>
-        <tr><td>Campo 2</td><td>20:00</td><td>Luca Marcocci (3.1) vs Gianluca Percivale (3.2)</td></tr>
-      </tbody>
-    </table>
-    <div class="official-link">
-      <a href="https://www.fitp.it/Tornei/Dettaglio-Competizione?competitionId=89DC6468-DFC4-460C-8AF0-84FAAB8FD35D" target="_blank">
-        Visualizza la pagina dedicata al torneo sul sito FITP
-      </a>
-    </div>
-  </section>
+  <main>
+    <section id="programma">
+      <h2>Programma Partite - 05/06/2025</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Campo</th>
+            <th>Ora</th>
+            <th>Giocatori</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Campo 1</td><td>14:30</td><td>De Sanctis Emanuele (2.8) vs Elia S. Di Simone (2.7)</td></tr>
+          <tr><td>Campo 1</td><td>16:30</td><td>Francesco Motto (2.8) vs Alberto Gallo (2.7)</td></tr>
+          <tr><td>Campo 1</td><td>18:30</td><td>Federico Rondano (2.7) vs Federico Capeccia (2.8)</td></tr>
+          <tr><td>Campo 1</td><td>20:00</td><td>Alessio Miserere (2.7) vs Alessandro Ortelli (2.8)</td></tr>
+          <tr><td>Campo 1</td><td>21:30</td><td>Filippo Bordoni (2.8) vs Giovanni B. B. Bibolini (2.7)</td></tr>
+          <tr><td>Campo 2</td><td>16:00</td><td>P. Jakub Homola (2.7) vs Lorenzo Leone (2.7)</td></tr> <tr><td>Campo 2</td><td>18:00</td><td>Mattia Strazza (2.8) vs Lorenzo Delfino (2.7)</td></tr> <tr><td>Campo 1</td><td>21:30</td><td>Filippo Bordoni (2.8) vs Giovanni B. B. Bibolini (2.7)</td></tr>
+          <tr><td>Campo 2</td><td>20:00</td><td>Vincenzo Curinga (2.8) vs Elia Ruffino (2.7)</td></tr> <tr><td>Campo 2</td><td>21:30</td><td>Lorenzo Carena (2.7) vs Leonardo Rovero (2.8)</td></tr>
+        </tbody>
+      </table>
+      <div class="official-link">
+        <a href="https://www.fitp.it/Tornei/Dettaglio-Competizione?competitionId=89DC6468-DFC4-460C-8AF0-84FAAB8FD35D" target="_blank">
+          Visualizza la pagina dedicata al torneo sul sito FITP
+        </a>
+      </div>
+    </section>
 
-  <section class="section" id="bar">
-    <h2>Bar</h2>
-    <div class="menu-item"><span>Acqua</span><span>€ 1,00</span></div>
-    <div class="menu-item"><span>Caffè</span><span>€ 1,00</span></div>
-    <div class="menu-item"><span>Coca-cola</span><span>€ 2,50</span></div>
-    <div class="menu-item"><span>Crodino</span><span>€ 3,00</span></div>
-    <div class="menu-item"><span>Energy drink</span><span>€ 3,00</span></div>
-    <div class="menu-item"><span>Estathé</span><span>€ 1,50</span></div>
-    <div class="menu-item"><span>Powerade</span><span>€ 3,00</span></div>
-    <div class="menu-item"><span>Succo di frutta</span><span>€ 3,00</span></div>
-    <div class="menu-item"><span>Birra in bottiglia</span><span>€ 3,50</span></div>
-    <div class="menu-item"><span>Birra alla spina (0,25l)</span><span>€ 3,00</span></div>
-    <div class="menu-item"><span>Prosecco calice</span><span>€ 3,00</span></div>
-    <div class="menu-item"><span>Panino</span><span>€ 6,00</span></div>
-    <div class="menu-item"><span>Patatine</span><span>€ 1,50</span></div>
-    <div class="menu-item"><span>Toast</span><span>€ 4,50</span></div>
-  </section>
+    <section id="bar">
+      <h2>Servizio Bar</h2>
+      <div class="menu-item"><span>Acqua</span><span>€ 1,00</span></div>
+      <div class="menu-item"><span>Caffè</span><span>€ 1,00</span></div>
+      <div class="menu-item"><span>Coca-cola</span><span>€ 2,50</span></div>
+      <div class="menu-item"><span>Crodino</span><span>€ 3,00</span></div>
+      <div class="menu-item"><span>Energy drink</span><span>€ 3,00</span></div>
+      <div class="menu-item"><span>Estathé</span><span>€ 1,50</span></div>
+      <div class="menu-item"><span>Powerade</span><span>€ 3,00</span></div>
+      <div class="menu-item"><span>Succo di frutta</span><span>€ 3,00</span></div>
+      <div class="menu-item"><span>Birra in bottiglia</span><span>€ 3,50</span></div>
+      <div class="menu-item"><span>Birra alla spina (0,25l)</span><span>€ 3,00</span></div>
+      <div class="menu-item"><span>Prosecco calice</span><span>€ 3,00</span></div>
+      <div class="menu-item"><span>Panino</span><span>€ 6,00</span></div>
+      <div class="menu-item"><span>Patatine</span><span>€ 1,50</span></div>
+      <div class="menu-item"><span>Toast</span><span>€ 4,50</span></div>
+    </section>
 
-  
-    <section class="section gallery" id="galleria">
-      <h2>Galleria fotografica</h2>
-      <p style="font-size: 16px; line-height: 1.6;">
-        Le immagini seguenti raccontano alcuni momenti dell’evento di apertura del <strong>2° Torneo Open Italmatch</strong>,
-        svoltosi sul <strong>lungomare Crocetta di Celle Ligure</strong> il <strong>1° giugno 2025</strong>.
-      </p>
+    <section id="galleria" class="gallery">
+      <h2>Galleria Foto & Video</h2>
+      <img src="gallery/foto1.jpg" alt="Foto 1">
+      <img src="gallery/foto2.jpg" alt="Foto 2">
+      <img src="gallery/foto3.jpg" alt="Foto 3">
+      <img src="gallery/foto4.jpg" alt="Foto 4">
+      <img src="gallery/foto5.jpg" alt="Foto 5">
+    </section>
 
-    <h2>Galleria fotografica</h2>
-    <div class="gallery-grid">
-      <img src="gallery/foto1.jpg" alt="Foto torneo 1">
-      <img src="gallery/foto2.jpg" alt="Foto torneo 2">
-      <img src="gallery/foto3.jpg" alt="Foto torneo 3">
-    </div>
-  </section>
-
-  <section class="section contact" id="contatti">
-    <h2>Contatti</h2>
-    <p><strong>Indirizzo:</strong> Via Lavadore 24, Celle Ligure (SV)</p>
-    <p><strong>Telefono:</strong> 019 990869</p>
-    <p><strong>Email:</strong> tennisclublavadore@gmail.com</p>
-  </section>
+    <section id="contatti" class="contact">
+      <h2>Contatti</h2>
+      <p><strong>Indirizzo:</strong> Via Lavadore 24, Celle Ligure (SV)</p>
+      <p><strong>Telefono:</strong> 019 990869</p>
+      <p><strong>Email:</strong> <a href="mailto:tennisclublavadore@gmail.com">tennisclublavadore@gmail.com</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/tclub90">@tclub90</a></p>
+    </section>
+  </main>
 
   <footer>
     &copy; 2025 Tennis Club Lavadore - Tutti i diritti riservati
