@@ -187,3 +187,53 @@ footer {
     max-width: 80%;
   }
 }
+.hero {
+  background: linear-gradient(135deg, var(--blu), var(--arancio));
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.logo-box img {
+  height: 60px;
+  max-width: 120px;
+  object-fit: contain;
+  border-radius: 12px;
+  background-color: white;
+  padding: 0.3rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.logo-box img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .logo-box {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .logo-box img {
+    height: 50px;
+    max-width: 80%;
+  }
+}
