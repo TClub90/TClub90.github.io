@@ -32,8 +32,12 @@ header .logos {
 
 header img {
   max-height: 80px;
-  border-radius: 10px;
+  border-radius: 12px;
+  background-color: white;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 nav {
   background-color: var(--bianco);
@@ -84,6 +88,24 @@ table td {
   border: 1px solid var(--grigio);
   padding: 0.75rem;
   background-color: #fafafa;
+}
+table tbody tr:nth-child(even) {
+  background-color: #f0f8ff; /* azzurrino chiaro */
+}
+
+table tbody tr:hover {
+  background-color: #e0f0ff;
+}
+
+table td {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #222;
+}
+
+table td:nth-child(2) {
+  font-weight: bold;
+  color: var(--arancio);
 }
 
 .menu-item {
